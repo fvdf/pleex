@@ -12,7 +12,7 @@ export const toCollection = (collection, input, success, failure, clear, rmbrack
             // Now we have collection
             // Write new items to it
             if (clear) {
-                await AsyncStorage.setItem(collection, JSON.stringify([input]));
+                await AsyncStorage.setItem(collection, JSON.stringify(input));
                 success(true);
             }
             else {
